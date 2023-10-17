@@ -240,4 +240,9 @@ public class AxisTick implements IAxisTick {
 		axisTickLabels.updateLayoutData();
 		axisTickMarks.updateLayoutData();
 	}
+
+	@Override
+	public void setForcedStepSize(Integer stepSize) {
+		this.axisTickLabels.setForcedStepSize(stepSize);
+	}
 }
