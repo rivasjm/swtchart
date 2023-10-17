@@ -867,4 +867,5 @@ public class AxisTickLabels implements PaintListener {
 	public void setForcedStepSize(Integer stepSize) {
 		this.forcedStepSize = stepSize;
 	}
+	
 }
