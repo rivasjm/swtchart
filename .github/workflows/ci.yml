@@ -38,7 +38,7 @@ jobs:
         run: mvn -f org.eclipse.swtchart.cbi/pom.xml -T 1C clean package --batch-mode --no-transfer-progress
 
     - name: Deploy update-site to the repository Github Page
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./org.eclipse.swtchart.updatesite/target/repository
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./org.eclipse.swtchart.updatesite/target/repository
